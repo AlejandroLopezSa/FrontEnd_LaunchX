@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lopoxleria: Endulza tu alma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="Logo_Lopox.png" alt="Logo Lopoxleria" width="250px" height="250px">
+    <h1> Lopoxleria </h1>
+
+    <h2>¡Haz tu pedido:</h2>
+
+    <form action="Pedido.js">
+    <!-- Nombre Cliente -->
+    <label for="nombreCliente"> Nombre Completo:</label>
+    <br>
+    <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Escribe tu nombre"><br><br>
+
+    <!-- Telefono Cliente -->
+    <label for="tel1">Número de Teléfono:</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <!-- Correo Eléctronico Cliente -->
+    <label for="correo1">Correo Eléctronico:</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    </form> <br>
+
+    <h2>Método de Entrega:</h2>
+    <input type="radio" id="entregaDomicilio" name="tipoEntrega" value="A Domicilio">
+    <label for="entregaDomicilio">A domicilio</label><br>
+    <input type="radio" id="entregaSucursal" name="tipoEntrega" value="Sucursal">
+    <label for="entregaSucursal">En Sucursal</label><br><br>
+
+    <h2>Sabor del Patel:</h2>
+    <label for="Pastel">¿Cuál es tu sabor?</label>
+    <select id="Pastel" name="Pastel">
+        <option value="chocolateSupremo">Chocolate Supremo</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="3leches">3 Leches</option>
+        <option value="café">Café</option>
+        <option value="imposible">Imposible</option>
+        <option value="frutas">Frutas</option>
+    </select><br><br>
+
+    <h2>¿Deseas agregar un Extra?</h2>
+    <input type="checkbox" id="capaChocolate" name="capaChocolate" value="Chocolate líquido">
+    <label for="capaChocolate">Capa de chocolate líquido</label><br>
+    <input type="checkbox" id="nombreFestejado" name="nombreFestejado" value="Nombre Festejado">
+    <label for="nombreFestejado">Nombre Festejado</label><br>
+    <input type="checkbox" id="chispasChocolate" name="chispasChocolate" value="Chispas de Chocolate">
+    <label for="chispasChocolate">Chispas de Chocolate</label><br>
+    <input type="checkbox" id="chispasColores" name="chispasColores" value="Chispas de Colores">
+    <label for="chispasColores">Chispas de Colores</label><br>
+    <input type="checkbox" id="tabletaChocolate" name="tabletaChocolate" value="Tabletas de Chocolate">
+    <label for="tabletaChocolate">Tabletas de Chocolate</label><br>
+    <input type="checkbox" id="tabletaVainilla" name="tabletaVainilla" value="Tabletas de Vainilla">
+    <label for="tabletaVainilla">Tabletas de Vainilla</label><br>
+    <input type="checkbox" id="vela" name="vela" value="Vela">
+    <label for="vela">Vela</label><br>
+    <input type="checkbox" id="tarjetaFelicitacion" name="tarjetaFelicitacion" value="Tarjeta Felicitacion">
+    <label for="tarjetaFelicitacion">Tarjeta de Felicitación</label><br>
+
+    <h2>¿Prefieres una combinacion Deleita?</h2>
+    <label for="deleitaCombinacion">¿Qué opcion Deleita?</label>
+    <select id="deleitaCombinacion" name="deleitaCombinacion">
+        <option value="deleita1">Deleita 1</option>
+        <option value="deleita2">Deleita 2</option>
+        <option value="deleita3">Deleita 3</option>
+        <option value="deleita4">Deleita 4</option>
+        <option value="deleita5">Deleita 5</option>
+    </select><br><br>
+
+    <h2>¿Deseas algún Paquete de Extras?</h2>
+    <label for="deleitaCombinacion">¿Qué Paquete prefieres?</label>
+    <select id="deleitaCombinacion" name="deleitaCombinacion">
+        <option value="paquete1">Paquete 1</option>
+        <option value="paquete2">Paqueter 2</option>
+        <option value="paquete3">Paquete 3</option>
+        <option value="paquete4">Paquete 4</option>
+        <option value="paquete5">Paquete 5</option>
+    </select><br><br>
+
+    <input type="button" id="confirmarPedido" name="confirmarPedido" value="ConfirmarPedido" onclick="alert('¡¡¡Hemos tomado tu pedido!!!');"><br><br>
+
+
+
+    
+
+</body>
+</html>
